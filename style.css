@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #16181D;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    width: 100dvw;
+
+}
+
+.information {
+    display: flex;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.background-image {
+    width: 100dvw;
+    height: 90dvh;
+
+}
+
+
+.teste {
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: #141414;
+
+}
