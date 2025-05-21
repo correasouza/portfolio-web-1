@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #16181D;
+    
 }
 
 .container {
@@ -17,20 +17,19 @@
     display: flex;
     width: 100dvw;
     height: 100dvh;
+    background-image: url(./assets/background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.background-image {
-    width: 100dvw;
-    height: 90dvh;
-
-}
-
-
-.teste {
+.conteudo {
     display: flex;
-    flex-direction: column;
-    width: 100dvw;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
     height: 100dvh;
-    background-color: #141414;
-
+    width: 100dvw;
 }
