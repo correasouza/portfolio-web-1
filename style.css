@@ -33,3 +33,29 @@
     height: 100dvh;
     width: 100dvw;
 }
+
+.icon {
+    position: relative;
+
+}
+
+.imagem-perfil {
+    display: flex;
+    padding: 6px;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    border: solid;
+    border-width: 3px;
+    border-color: #E3646E;
+    object-fit: cover;
+}
+
+.simbolo-codigo {
+    display: flex;
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    bottom: 0;
+    right: 0;
+}
