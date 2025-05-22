@@ -1,61 +1,362 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100dvh;
-    width: 100dvw;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .information {
-    display: flex;
-    width: 100dvw;
-    height: 100dvh;
-    background-image: url(./assets/background-image.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+  display: flex;
+  height: 780px;
+  background-image: url(./assets/background-image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .conteudo {
-    display: flex;
-    position: relative;
-    z-index: 1;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100dvw;
+  gap: 56px;
 }
 
 .icon {
-    position: relative;
-
+  position: relative;
 }
 
 .imagem-perfil {
-    display: flex;
-    padding: 6px;
-    width: 160px;
-    height: 160px;
-    border-radius: 100%;
-    border: solid;
-    border-width: 3px;
-    border-color: #E3646E;
-    object-fit: cover;
+  display: flex;
+  padding: 6px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: solid;
+  border-width: 2px;
+  border-color: #e3646e;
+  object-fit: cover;
 }
 
 .simbolo-codigo {
-    display: flex;
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    bottom: 0;
-    right: 0;
+  display: flex;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  bottom: 0;
+  right: 0;
+}
+
+.text-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 680px;
+  gap: 8px;
+}
+
+.text-information h3 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #c0c4ce;
+}
+
+.text-information h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  color: #e2e4e9;
+}
+
+.text-information p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #878ea1;
+}
+
+.lista-tecnologias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 754px;
+  gap: 16px;
+}
+
+.item-tecnologia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  background-color: #292c34;
+  padding: 8px 16px;
+  border-radius: 20px;
+  min-height: 42px;
+}
+
+.item-tecnologia h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c4ce;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background-color: #16181d;
+  height: 780px;
+  align-items: center;
+  gap: 56px;
+}
+
+.projetos-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.projetos-title p {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e3646e;
+}
+
+.projetos-title h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #e2e4e9;
+}
+
+.grid-projetos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 0 16px;
+}
+
+.card-projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #292c34;
+  height: 280px;
+  width: 330px;
+  border-radius: 12px;
+}
+
+.card-projetos img {
+  width: 306px;
+  height: 176px;
+  border-radius: 8px;
+}
+
+.card-projetos h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #e2e4e9;
+}
+
+.card-projetos p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c0c4ce;
+}
+
+.card-projetos div {
+  display: flex;
+  flex-direction: column;
+  width: 306px;
+  height: 75px;
+  padding: 4px;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  height: 460px;
+  background-color: #0d0e11;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+
+.servicos-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.servicos-title p {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #e3646e;
+}
+
+.servicos-title h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #e2e4e9;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card-servicos {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 155px;
+  border: solid;
+  border-color: #16181d;
+  border-radius: 12px;
+  border-width: 2px;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card-servicos img {
+  width: 48px;
+  height: 48px;
+}
+
+.card-servicos h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #e2e4e9;
+}
+
+.card-servicos p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #c0c4ce;
+}
+
+.card-servicos div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 20px;
+}
+
+.contato {
+  display: flex;
+  height: 780px;
+  background-image: url(./assets/background-dois.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contato-conteudo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100dvw;
+  gap: 56px;
+}
+
+.contato-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.contato-title p {
+  font-family: "Maven pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c4ce;
+}
+
+.contato-title h1 {
+  font-family: "Asap", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #e2e4e9;
+}
+
+.contato-title h2 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #bb72e9;
+}
+
+.lista-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.item-contatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  height: 68px;
+  align-items: center;
+  background-color: #292c34;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.item-contatos img {
+  width: 24px;
+  height: 24px;
+}
+
+.item-contatos h1 {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c0c4ce;
+}
+
+.item-contatos div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-red {
+    color: #e3646e;
 }
